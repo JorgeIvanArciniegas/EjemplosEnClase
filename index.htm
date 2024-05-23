@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba 5 - Abril 12 2024</title>
+    
+    <style>
+        @font-face {
+            font-family: martianMono;
+            src: url(../MartianMono-VariableFont_wdth\,wght.ttf);
+        }
+
+        form {
+            margin: auto;
+            background-color: rgb(221, 233, 124);
+            width: 30%;
+            padding: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: .9rem;
+            font-weight: 800;
+        }
+
+        h1 {
+            font-family: "martianMono";
+            color: green;
+        }      
+
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        .nombre {
+            background-color: rgb(196, 98, 150);
+        }
+        .moneda {
+            width: 70%;            
+        }
+        .moneda label {
+            width: 20px;
+            
+        }
+        .moneda input {
+            padding: 10px 5px;
+            margin-left: 30px;
+        }
+
+        .comentario {
+            display: flex;
+            display: inline-block;            
+        }
+        .pais {
+            width: 170px;
+        }
+        .botones{
+            margin-left: 60px;
+            
+        }
+       .botones .enviar{
+            width: 30%;
+            background-color: rgb(178, 238, 150);
+            padding: 10px;
+            color: black;
+            font-weight: bold;
+            box-shadow: 2px 2px 2px rgb(241, 233, 233);
+            /*margin-left:;*/
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+        .botones .borrar{        
+           width: 30%;
+            background-color: rgb(128, 39, 19);
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 2px 2px 2px rgb(241, 233, 233);
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <h1><img src="../crypto.png" alt="">CryptoBro</h1>
+        <h2>Te enviamos el doble de BitCoins</h2>
+        <label for="">Nombre:</label><input type="text" name="nombre" id="nombre" required class="nombre"><br><br>
+        <label for="">Direccion:</label><input type="text" name="direccion" id="direccion" required class="nombre"><br><br>
+        <label for="">Cantidad(1 a 1000):</label><input type="range" name="rango" id="rango" minlength="1"
+            maxlength="1000">
+        <div class="moneda">
+            <fieldset>
+                <legend>Moneda</legend>
+                <input type="radio" name="eurodolar" id="euro"><label for="">Euro:</label>
+                <input type="radio" name="eurodolar" id="dolar"><label for="">Dolar:</label>
+            </fieldset>
+        </div><br>
+        <label for="">País:</label>
+        <select name="pais" id="pais" class="pais">
+            <option value="">España</option>
+            <option value="">EEUU</option>
+            <option value="">Colombia</option>
+            <option value="">Francia</option>
+            <option value="">Italia</option>
+        </select><br><br>
+        <label for="">Comentario</label><textarea name="comentario" id="comentario" cols="45" rows="10"
+            class="comentario"></textarea><br><br>
+        <div class="botones"><input type="submit" value="Enviar" class="enviar">
+        <input type="reset" value="Borrar" class="borrar"></div>
+    </form>
+</body> 
+
+</html>

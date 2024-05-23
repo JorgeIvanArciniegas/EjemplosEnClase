@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo css</title>
+
+    <style>
+        p {
+            color: darkorange;
+            text-decoration: underline;
+            border: 1px dotted rgb(216, 211, 211);
+            background-color: rgba(red, green, blue, 0.3);
+            padding-left: 10px;
+        }
+
+        p:hover {
+            background-color: darkgreen;
+        }
+
+        div {
+            background-color: darkkhaki;
+            border: 2px solid red;
+            width: 400px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        div a {
+            color: cyan;
+
+        }
+
+        a {
+            color: black;
+        }
+
+        h1 {
+            background-color: aqua;
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            /* centra horizontalmente el texto */
+            padding-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: lighter;
+            text-shadow: 1px 1px 2px white;
+
+        }
+
+        h1 span {
+            color: crimson;
+            font-size: 2em;
+        }
+
+        #mensaje {
+            background-color: deeppink;
+        }
+
+        #aviso {
+            background-color: yellow;
+        }
+
+        #mensaje,
+        #aviso {
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .par {
+            color: red;
+        }
+
+        li:nth-child(odd) {
+            color: green;
+        }
+
+        li:nth-child(3n) {
+            font-weight: bold;
+        }
+        li:nth-child(even){
+            text-decoration: line-through;
+        }
+
+        .caja{
+            background-color:blueviolet ;
+            color:orange;
+            width: 150px;
+            height: 150px;
+            overflow: scroll;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><span>T</span>ìtulo 1</h1>
+    <div>
+        <p style="color:red; font-size: 40px;">Uno</p>
+        <p>Dos</p>
+        <p>Tres</p>
+        <p><a href="http://www.google.es">Ir a google</a></p>
+    </div>
+    <p><a href="http://www.yandex.es">Ir a yandex</a></p>
+    <div style="background-color: bisque;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nam
+        blanditiis nostrum sed minima eaque
+        perferendis debitis illum eligendi incidunt velit laboriosam, impedit quo omnis excepturi iste eos, et qui unde
+        corporis dolores aperiam veniam. Ea adipisci temporibus non suscipit deleniti pariatur ut quam. Delectus
+        explicabo totam molestiae beatae suscipit!
+    </div>
+    <div id="mensaje">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ratione dolorum distinctio fugit.
+        Aspernatur,
+        molestiae modi natus repellendus aliquam, est illum obcaecati deserunt necessitatibus eos quas quisquam quo. A
+        accusamus alias quo error ut veniam amet, quis esse ullam dolorum quam ipsum nulla repudiandae quod deserunt
+        ipsa maxime, labore voluptates.</div>
+    <div id="aviso">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolor impedit quam aliquid nam! Corrupti, deserunt
+        possimus nobis nam eos architecto alias perferendis, consequuntur veniam neque voluptates repudiandae veritatis
+        vel quidem quas, saepe voluptatum? Magni ipsam fugit odio labore porro quaerat exercitationem nesciunt nisi
+        nobis hic, illo error, placeat vel!
+    </div>
+    <ul>
+        <li>1</li>
+        <li class="par">2</li>
+        <li>3</li>
+        <li class="par">4</li>
+        <li>5</li>
+        <li class="par">6</li>
+        <li>7</li>
+        <li class="par">8</li>
+        <li>9</li>
+        <li class="par">10</li>
+    </ul>
+    <div class="caja">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, beatae assumenda qui laboriosam aspernatur hic
+        minus error illo rerum ullam dolorum, aut sequi. Repellat exercitationem iste facere et autem accusamus ratione
+        aperiam delectus nesciunt nihil, aliquid voluptatum saepe consectetur pariatur dolorum atque qui repudiandae
+        iusto dolore. Dicta velit deleniti explicabo.
+    </div>
+</body>
+
+</html>
